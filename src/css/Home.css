@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.home {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.home__image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, #000f, #0000);
+    z-index: -1;
+    margin-bottom: -350px;
+}
+
+.home__row {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin: 0px 5px;
+    
+}
+.home__row > .Product:first-child {
+    opacity: 0;
+}
+
+/*Menu*/
+.nav-item::after {
+    content: " ";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    transition: all .5s;
+}
+.nav-item:hover::after{    
+    width: 100%;  
+}
+/* .nav-item:hover a{
+    font-size: 18px;
+    transition: 1s;
+    text-transform: uppercase;
+    color: tomato;
+    text-decoration: overline;
+    
+} */
+
+/*Slide*/
+.carousel {
+    width: 1500px;
+    height: 600px;
+}
+
+.carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item {
+    width: 100%;
+}
+
+.carousel-indicators {
+    top: 100%;
+}
+
+.slider-text-inner {
+    background: black;
+}
+
+.carousel-item .slide {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;    
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    font-size: 12px;
+    min-height: 200px;
+    padding: 20px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.9);
+    top: 35%;
+    right: 10%;
+    width: 30%;
+    position: absolute;
+    letter-spacing: 1px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.caption > .h3 {
+    text-decoration: #053b1b;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-item {
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.example_e {
+    border: none;
+    background: #ff9900;
+    color: #ffffff ;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.example_e:hover {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
